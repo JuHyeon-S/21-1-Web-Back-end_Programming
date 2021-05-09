@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function callTenTimes(call){
+        for (var i = 0; i < 10; i++){
+          call();
+        }
+      }
+      var callback = function() {
+        alert('함수 호출');
+      }
+      callTenTimes(callback);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

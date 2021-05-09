@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\서주현\Desktop\웹서버\week06\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+559181672.index
+127903120.index
+820955178.index
+2152019520.index
+42165217.index
+13964776.index
+3249707528.index
