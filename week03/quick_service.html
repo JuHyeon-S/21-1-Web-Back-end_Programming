@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #box {
+        background-color: rgb(216, 216, 216);
+        height: 70px;
+        width: 800px;
+      }
+      #qs_p {
+        margin-left: 30px;
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        background-color: #1682cd;
+        text-align: center;
+        box-shadow: 1px 5px 15px gray;
+        font-weight: 550;
+      }
+      #tab_div {
+        display: inline-block;
+        padding: 5px;
+        font-size: 18px;
+      }
+      #tab_div ul li {
+        list-style: none;
+        float: left;
+      }
+      #tab_div ul li a:active {
+        text-decoration: 3px #1682cd underline;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      #banner ul li {
+        list-style: none;
+        float: left;
+        font-size: 12px;
+        text-align: center;
+      }
+      #banner ul li a:hover {
+        background-color: #1682cd;
+      }
+      #banner ul li a:hover .banner_img{
+        display: none;
+      }
+      #banner ul li a:hover .banner_img2{
+        display: block;
+        padding: 20px;
+        margin-left: 20px;
+      }   
+      #banner ul li a:hover .banner_img{
+        display: none;
+      }
+      #banner ul li a:hover span{
+        color: white;
+      }
+      .banner_a {
+        display: block;
+        width: 120px;
+        height: 120px;
+      }
+      .banner_img{
+        display: block;
+        padding: 20px;
+        margin-left: 20px;
+      }
+      .banner_img2{
+        display: none;
+      }
+      
+    </style>
+    <script>
+      function click_tab1(){
+        document.getElementById("tab1").style.textDecoration = "underline";
+        document.getElementById("tab1").style.textDecorationColor = "#1682cd";
+        document.getElementById("tab1").style.color = "#1682cd";
+        document.getElementById("tab1").style.fontWeight = "bold";
+        document.getElementById("tab2").style.textDecoration = "none";
+        document.getElementById("tab2").style.fontWeight = "normal";
+        document.getElementById("tab2").style.color = "black";
+        document.getElementById("banner_ul1").style.display = "block";
+        document.getElementById("banner_ul2").style.display = "none";
+      }
+      function click_tab2(){
+        document.getElementById("tab2").style.textDecoration = "underline";
+        document.getElementById("tab2").style.textDecorationColor = "#1682cd";
+        document.getElementById("tab2").style.color = "#1682cd";
+        document.getElementById("tab2").style.fontWeight = "bold";
+        document.getElementById("tab1").style.textDecoration = "none";
+        document.getElementById("tab1").style.fontWeight = "normal";
+        document.getElementById("tab1").style.color = "black";
+        document.getElementById("banner_ul2").style.display = "block";
+        document.getElementById("banner_ul1").style.display = "none";
+      }
+    </script>
+  </head>
+  <body onload="click_tab1()">
+    <div id="box">
+      <div id="qs_p">
+        <p style="color: white;">QUICK SERVICE</p>
+      </div>
+      <div id="tab_div">
+        <ul>
+          <li>
+            <a href="javascript:void(0);" id="tab1" onclick="click_tab1()">재학생</a>
+            &nbsp;|&nbsp;&nbsp;
+          </li>
+          <li>
+            <a href="javascript:void(0);" id="tab2" onclick="click_tab2()">교수</a>
+          </li>
+        </ul>
+      </div>
+      <div id="banner">
+        <ul id="banner_ul1">
+          <li>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico1.png" class="banner_img">
+              <img src="image/quick-ico1-hov.png" class="banner_img2">
+              <span>통합정보시스템</span>
+            </a>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico2.png" class="banner_img">
+              <img src="image/quick-ico2-hov.png" class="banner_img2">
+              <span>SmartLEAD</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico3.png" class="banner_img">
+              <img src="image/quick-ico3-hov.png" class="banner_img2">
+              <span>한림Q&A</span>
+            </a>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico5.png" class="banner_img">
+              <img src="image/quick-ico5-hov.png" class="banner_img2">
+              <span>일송기념도서관</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico6.png" class="banner_img">
+              <img src="image/quick-ico6-hov.png" class="banner_img2">
+              <span>학생생활관</span>
+            </a>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico14.png" class="banner_img">
+              <img src="image/quick-ico14-hov.png" class="banner_img2">
+              <span>통학버스</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico11.png" class="banner_img">
+              <img src="image/quick-ico11-hov.png" class="banner_img2">
+              <span>셔틀버스</span>
+            </a>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico15.png" class="banner_img">
+              <img src="image/quick-ico15-hov.png" class="banner_img2">
+              <span>한림 BeCome</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico13.png" class="banner_img">
+              <img src="image/quick-ico13-hov.png" class="banner_img2">
+              <span>한림 신문고</span>
+            </a>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico4.png" class="banner_img">
+              <img src="image/quick-ico4-hov.png" class="banner_img2">
+              <span>인터넷증명발급</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico9.png" class="banner_img">
+              <img src="image/quick-ico9-hov.png" class="banner_img2">
+              <span>캠퍼스맵</span>
+            </a>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico8.png" class="banner_img">
+              <img src="image/quick-ico8-hov.png" class="banner_img2">
+              <span>현장실습지원센터</span>
+            </a>
+          </li>
+        </ul>
+        <ul id="banner_ul2" style="display: none;">
+          <li>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico1.png" class="banner_img">
+              <img src="image/quick-ico1-hov.png" class="banner_img2">
+              <span>통합정보시스템</span>
+            </a>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico2.png" class="banner_img">
+              <img src="image/quick-ico2-hov.png" class="banner_img2">
+              <span>SmartLEAD</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico25.png" class="banner_img">
+              <img src="image/quick-ico25-hov.png" class="banner_img2">
+              <span>전자출결시스템</span>
+            </a>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico26.png" class="banner_img">
+              <img src="image/quick-ico26-hov.png" class="banner_img2">
+              <span>한림그룹웨어</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico17.png" class="banner_img">
+              <img src="image/quick-ico17-hov.png" class="banner_img2">
+              <span>연구행정통합시스템</span>
+            </a>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico3.png" class="banner_img">
+              <img src="image/quick-ico3-hov.png" class="banner_img2">
+              <span>채용시스템</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico28.png" class="banner_img">
+              <img src="image/quick-ico28-hov.png" class="banner_img2">
+              <span>행정부서/기관</span>
+            </a>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico22.png" class="banner_img">
+              <img src="image/quick-ico22-hov.png" class="banner_img2">
+              <span>한림Vision</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico11.png" class="banner_img">
+              <img src="image/quick-ico11-hov.png" class="banner_img2">
+              <span>셔틀버스</span>
+            </a>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico29.png" class="banner_img">
+              <img src="image/quick-ico29-hov.png" class="banner_img2">
+              <span>발전기금</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico20.png" class="banner_img">
+              <img src="image/quick-ico20-hov.png" class="banner_img2">
+              <span>대학알리미</span>
+            </a>
+            <a href="" class="banner_a">
+              <img src="image/quick-ico27.png" class="banner_img">
+              <img src="image/quick-ico27-hov.png" class="banner_img2">
+              <span>규정집</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+
