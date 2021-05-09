@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;week10_20185135/src/main/webapp/week10.jsp&apos; to &apos;week10_work02_req.jsp&apos;" description="Rename resource &apos;week10.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/week10.jsp" name="week10_work02_req.jsp" stamp="1620096780191" updateReferences="true"/>
+</session>
