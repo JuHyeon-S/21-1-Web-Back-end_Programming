@@ -1,0 +1,29 @@
+@charset "EUC-KR";
+
+body {
+	width: 100%;
+	padding: 10px;
+}
+
+.title{
+	width: 100%;
+	heigth: 50px;
+	background-color: black;
+	margin:5px;
+	padding: 20px;
+}
+
+.title_a{
+	margin-left: 50px;
+	background-color: black;
+	color: white;
+	text-decoration: none;
+}
+
+.p1{
+	width: 100%;
+	heigth: 300px;
+	background-color: rgb(234,234, 234);
+	font-size: 20px;
+	text-align: center;
+}
