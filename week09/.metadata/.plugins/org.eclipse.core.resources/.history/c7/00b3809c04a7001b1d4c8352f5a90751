@@ -1,0 +1,22 @@
+<%@page import="com.sun.org.apache.xerces.internal.impl.xpath.regex.RegularExpression.Context"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	이 페이지는 5초마다 새로고침 됩니다.
+	<%@page import="java.util.Date"%>
+	<%= new Date().toLocaleString() %>
+	<% 
+		if(!id.equals("나관리") || !pw.equals("1234")){
+			out.clear();
+			out.println("["+id+"]님은 관리자가 아닙니다.");
+		}
+	%>
+</body>
+</html>
