@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        border: 1px solid rgb(68, 124, 209);
+        color: rgb(68, 124, 209);
+        width: 200px;
+        padding: 10px;
+        margin: 20px;
+      }
+      #a:hover{
+        background-color: rgb(68, 124, 209);
+        color: white;
+        transition-duration: 3s;
+        cursor: grab;
+      }
+      #b:hover{
+        margin-inline-start: 50px;
+        transition-duration: 3s;
+        cursor: move;
+      }
+      #c:hover{
+        border: 10px solid rgb(68, 124, 209); 
+        transition-duration: 3s;
+        cursor: text;
+      }
+      #d:hover{
+        height: 200px;
+        cursor: grabbing;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="a">
+      color change
+    </div>
+    <div id="b">
+      x offset change
+    </div>
+    <div id="c">
+      border change
+    </div>
+    <div id="d">
+      size change
+    </div>
+  </body>
+</html>
