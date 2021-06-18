@@ -1,0 +1,140 @@
+@charset "EUC-KR";
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+*{
+	margin: 0;
+  padding: 0;
+  font-family: 'Jeju Gothic', sans-serif;
+}
+
+.jejugothic * { 
+ font-family: 'Jeju Gothic', sans-serif;
+}
+.customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
+.customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
+.customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;border-radius:6px;font-size:14px;font-weight:bold;overflow:hidden;background: #d95050;background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
+.customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:10px 15px;font-size:14px;font-weight:bold;}
+.customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;height:12px;background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+#map{
+	position: absolute;
+    top: 0;
+/*     left:150px; */
+    transition: all 0.3s;
+    z-index:0;
+}
+#map.active{
+	width:70vw;
+	height:80vh;
+}
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    z-index: 999;
+    background: #333;
+    color: #fff;
+    transition: all 0.3s;
+}
+#sidebar.active {
+    right: 0;
+}
+#sidebarCollapse{
+	display:none;
+}
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    display: none;
+}
+#info {
+	z-index:100;
+}
+
+.slide-div {
+	z-index:100;
+  position: absolute;
+  left: 0px;
+/*   top: 10px; */
+  width: 300px;
+  height: 100vh;
+  background: #333;
+}
+
+.button-div {
+	z-index:100;
+  position: absolute;
+  left: 270px;
+  top: 30px;
+  width: 80px;
+  height: 60px;
+  background: #17b0af;
+}
+
+.button-open {
+	z-index:100;
+  width: 15px;
+  height: 15px;
+  border-top: 13px solid transparent;
+  border-right: 25px solid #0f304e;
+  border-bottom: 13px solid transparent;
+  margin: 10px 20px;
+}
+
+.button-close {
+	z-index:100;
+  width: 15px;
+  height: 15px;
+  border-top: 13px solid transparent;
+  border-left: 25px solid #0f304e;
+  border-bottom: 13px solid transparent;
+  margin: 10px 20px;
+}
+.search_i {
+  text-align: center;
+  font-size: 10px;
+  width: 10vw;
+  padding-right: 50px;
+  margin: 0.5vw;
+  margin-left: 2vw;
+  border: 1px solid;
+  border-radius: 10em;
+  background-color: white;
+}
+.search_i input{
+  width: 8vw;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  padding-left: 5px;
+  display: inline;
+  box-sizing: border-box;
+  border: none;
+  outline-style: none;
+}
+
+.search_i img{
+  float: left;
+  position: absolute;
+  width: 2.5em;
+  height: 2.5em;
+  margin-top: 7px;
+  margin-left: 3em;
+}
+#star{
+	margin-left:160px;
+	width:50px;
+}
+#star:hover{
+	cursor: pointer;
+}
+.fac{
+	margin-left:10px;
+	width:50px;
+	
+}
